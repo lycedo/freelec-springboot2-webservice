@@ -18,8 +18,24 @@ repositories {
 }
 
 dependencies {
+    // spring boot
     implementation 'org.springframework.boot:spring-boot-starter-web'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+    // lombok (Getter / Setter)
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+
+    // spring boot JPA
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+    // H2
+    implementation 'com.h2database:h2:2.3.232'
+
+    // Mustache(View template)
+    implementation 'org.springframework.boot:spring-boot-starter-mustache'
+
+    // JUnit5
     testImplementation platform('org.junit:junit-bom:5.10.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
 }
