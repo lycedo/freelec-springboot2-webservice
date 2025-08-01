@@ -35,6 +35,15 @@ dependencies {
     // Mustache(View template)
     implementation 'org.springframework.boot:spring-boot-starter-mustache'
 
+    // Oauth2
+    implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
+
+    // jdbc
+    implementation 'org.springframework.session:spring-session-jdbc'
+
+    // test security
+    testImplementation 'org.springframework.security:spring-security-test'
+
     // JUnit5
     testImplementation platform('org.junit:junit-bom:5.10.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
