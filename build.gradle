@@ -11,7 +11,8 @@ java {
 }
 
 jar {
-    enabled = false
+    bootJar.enabled= true
+    jar.enabled = false
 }
 
 group = 'com.jojoldu.book'
