@@ -34,4 +34,4 @@ jobs:
           sudo ./aws/install
 
       - name: Deploy to S3
-        run: aws s3 cp build/libs/ s3://freelec-springbuild-boot/ --recursive
+        run: aws s3 cp build/libs/ s3://freelec-springboot-github/ --recursive
